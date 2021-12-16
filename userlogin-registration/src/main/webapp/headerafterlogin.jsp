@@ -64,7 +64,7 @@ body {
 <body>
 
 <div class="header">
-  <a href="/login" class="logo">CompanyLogo</a>
+  <a href="/home" class="logo">CompanyLogo</a>
   <div class="header-right">
     <a class="active" href="/home">Home</a>
     <a class="active" href="/videos">Videos</a>

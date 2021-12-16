@@ -2,7 +2,6 @@ package com.dayanand.userloginregistration.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,7 +30,6 @@ public class HomeController {
 		if (user == null) {
 			mv.setViewName("index");
 		} else {
-			HttpSession session=request.getSession();
 			mv.addObject("user", user);
 			mv.setViewName("welcome");
 		}
@@ -49,7 +47,7 @@ public class HomeController {
 	public ModelAndView regvalidate(User user, ModelAndView mv) {
 
 		user = userService.getValidation(user);
-		if ((user == null)) {
+		if (user == null) {
 			mv.setViewName("index");
 			return mv;
 
@@ -79,6 +77,6 @@ public class HomeController {
 	@RequestMapping("/home")
 	public String home() {
 		
-	return "index";
+	return "home";
 }
 	}

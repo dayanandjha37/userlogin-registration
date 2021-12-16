@@ -7,13 +7,6 @@
 <title>Videos</title>
 </head>
 <body>
-<%-- <%
-
-String uname =(String)session.getAttribute("uname");
-if(uname==null){
-	response.sendRedirect("index.jsp");
-}
-%> --%>
 <center>
 <%@include file="headerafterlogin.jsp" %>
 </center>
